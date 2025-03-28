@@ -52,7 +52,7 @@ jobs:
 
       - name: Generate and build pipeline
         run: |
-          nix-shell --run "Rscript -e 'source(\"gen-pipeline.R\");rixpress::rxp_make()'"
+          nix-shell --run "Rscript -e 'source(\"gen-pipeline.R\") ; rixpress::rxp_make()'"
 
       - name: Export outputs to avoid rebuild
         run: |
