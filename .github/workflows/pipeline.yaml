@@ -92,6 +92,6 @@ jobs:
             echo "No changes to commit"
           fi
 
-      - name: Remove worktree
+      - name: Remove worktree.
         if: always()
         run: git worktree remove ../pipeline-output
